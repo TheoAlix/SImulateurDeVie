@@ -9,12 +9,11 @@ public class GUI extends JPanel{
         setVisible( true );
         this.game = game;
         this.game.trucDeBase(0);
-
     } 
     @Override
     public void paintComponent( Graphics g){  
         int x = 30;
-        for(Integer[] nbr : this.game.grille ){
+        for(int[] nbr : this.game.grille ){
             int y = 30;
             for(int nbr2 : nbr){
                 if(nbr2 == 1){
@@ -34,3 +33,4 @@ public class GUI extends JPanel{
     } 
   
 } 
+
